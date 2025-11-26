@@ -1,0 +1,128 @@
+[
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 1,
+    "fields": {
+      "menu_name": "main_menu",
+      "title": "Главная",
+      "url": "/",
+      "named_url": "",
+      "parent": null
+    }
+  },
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 2,
+    "fields": {
+      "menu_name": "main_menu",
+      "title": "Каталог",
+      "url": "/catalog/",
+      "named_url": "",
+      "parent": null
+    }
+  },
+
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 3,
+    "fields": {
+      "menu_name": "main_menu",
+      "title": "Телефоны",
+      "url": "/catalog/phones/",
+      "named_url": "",
+      "parent": 2
+    }
+  },
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 4,
+    "fields": {
+      "menu_name": "main_menu",
+      "title": "Apple",
+      "url": "/catalog/phones/apple/",
+      "named_url": "",
+      "parent": 3
+    }
+  },
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 5,
+    "fields": {
+      "menu_name": "main_menu",
+      "title": "Samsung",
+      "url": "/catalog/phones/samsung/",
+      "named_url": "",
+      "parent": 3
+    }
+  },
+
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 6,
+    "fields": {
+      "menu_name": "main_menu",
+      "title": "Ноутбуки",
+      "url": "/catalog/laptops/",
+      "named_url": "",
+      "parent": 2
+    }
+  },
+
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 7,
+    "fields": {
+      "menu_name": "main_menu",
+      "title": "О компании",
+      "url": "/about/",
+      "named_url": "",
+      "parent": null
+    }
+  },
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 8,
+    "fields": {
+      "menu_name": "main_menu",
+      "title": "Контакты",
+      "url": "/contacts/",
+      "named_url": "",
+      "parent": null
+    }
+  },
+
+
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 9,
+    "fields": {
+      "menu_name": "footer_menu",
+      "title": "Политика конфиденциальности",
+      "url": "/privacy/",
+      "named_url": "",
+      "parent": null
+    }
+  },
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 10,
+    "fields": {
+      "menu_name": "footer_menu",
+      "title": "Пользовательское соглашение",
+      "url": "/terms/",
+      "named_url": "",
+      "parent": null
+    }
+  },
+  {
+    "model": "tree_menu.menuitem",
+    "pk": 11,
+    "fields": {
+      "menu_name": "footer_menu",
+      "title": "Оферта",
+      "url": "/offer/",
+      "named_url": "",
+      "parent": null
+    }
+  }
+]

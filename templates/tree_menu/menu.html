@@ -1,0 +1,7 @@
+{% load tree_menu %}
+
+<ul>
+    {% for item in root_items %}
+        {% include "tree_menu/menu_item.html" with item=item tree=tree expanded_ids=expanded_ids active_id=active_id %}
+    {% endfor %}
+</ul>

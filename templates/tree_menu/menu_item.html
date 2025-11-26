@@ -1,0 +1,20 @@
+{% load tree_menu %}
+
+<li>
+    <a href="{{ item.get_url }}" 
+       {% if item.id == active_id %} style="font-weight:bold;" {% endif %}>
+       {{ item.title }}
+    </a>
+
+    {% if item.id in expanded_ids %}
+        {% with children=tree|get_item:item.id %}
+            {% if children %}
+                <ul>
+                    {% for child in children %}
+                        {% include "tree_menu/menu_item.html" with item=child tree=tree expanded_ids=expanded_ids active_id=active_id %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    {% endif %}
+</li>

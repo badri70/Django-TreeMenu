@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  treemenu:
+    build: .
+    container_name: treemenu
+    command: bash /app/entrypoint.sh
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
